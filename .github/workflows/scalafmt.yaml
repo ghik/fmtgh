@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   test:
-    name: Run tests
+    name: Format code
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -31,6 +31,6 @@ jobs:
         with:
           sbt-runner-version: ${{ env.SBT_VERSION }}
 
-      - name: Format coode
+      - name: Format code
         run: |
           sbt scalafmtSbtCheck scalafmtCheck
