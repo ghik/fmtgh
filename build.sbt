@@ -6,7 +6,4 @@ ThisBuild / organization     := "com.example"
 ThisBuild / organizationName := "example"
 
 lazy val root = (project in file("."))
-  .settings(
-    name := "fmtgh",
-    libraryDependencies += munit % Test
-  )
+  .settings(name := "fmtgh", libraryDependencies += munit % Test)
