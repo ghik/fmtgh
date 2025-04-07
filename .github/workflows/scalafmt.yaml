@@ -1,5 +1,10 @@
 name: scalafmt
 
+on:
+  push:
+    branches:
+      - main
+
 env:
   SBT_VERSION: 1.10.11
 
